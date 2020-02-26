@@ -303,7 +303,7 @@ class EnvVariable(object):
     def setBooleanValue(self, value:str):
         if not value:
             return False
-        elif self.value in ["FALSE", "false", "False", "0", 0]:
+        elif value in ["FALSE", "false", "False", "0", 0]:
             return False
         else:
             return True
